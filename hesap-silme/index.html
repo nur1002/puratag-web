@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PuraTag — Hesap Silme</title>
+<meta name="description" content="PuraTag hesabını ve ilişkili verilerini nasıl kalıcı olarak silebileceğini öğren.">
+<link rel="icon" href="../assets/app_icon.png" type="image/png">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="../index.html" class="brand">
+      <img src="../assets/app_icon.png" alt="PuraTag logosu">
+      <span>PuraTag</span>
+    </a>
+    <nav class="nav-links">
+      <a href="../index.html#nasil-calisir">Nasıl Çalışır</a>
+      <a href="../index.html#puan-sistemi">Puan Sistemi</a>
+      <a href="../index.html#filtreler">Filtreler</a>
+      <a href="../index.html#ozellikler">Özellikler</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="../index.html#indir" class="btn btn-primary btn-sm">Uygulamayı İndir</a>
+      <button class="nav-toggle" aria-label="Menüyü aç"></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="legal-hero">
+    <div class="container">
+      <span class="chip">Hesap ve Veri</span>
+      <h1>Hesabını ve verilerini sil</h1>
+      <p class="lead">
+        PuraTag hesabını istediğin zaman kalıcı olarak silebilirsin. Aşağıda hem
+        uygulama içinden hem de uygulamaya erişemiyorsan nasıl talep
+        edebileceğini, ve neyin hemen neyin belirli bir süre daha sistemde
+        kalabileceğini bulacaksın.
+      </p>
+    </div>
+  </section>
+
+  <section class="legal-section">
+    <div class="container">
+      <h2>Uygulama içinden sil</h2>
+      <p class="section-note">Giriş yapabiliyorsan en hızlı yol bu — birkaç saniye sürer.</p>
+      <ol class="delete-steps">
+        <li><div><strong>PuraTag'ı aç ve giriş yap</strong><span>E-posta/şifre veya Google hesabınla giriş yapmış olman yeterli.</span></div></li>
+        <li><div><strong>Profil → Ayarlar</strong><span>Profil sekmesinin sağ üstündeki dişli simgesine dokun.</span></div></li>
+        <li><div><strong>"Hesabımı Sil"e dokun</strong><span>Hesap bölümünün altında, kırmızı renkli seçenek.</span></div></li>
+        <li><div><strong>Şifreni girerek onayla</strong><span>Güvenlik amacıyla mevcut şifreni tekrar sorarız.</span></div></li>
+        <li><div><strong>Hesabın kalıcı olarak silinir</strong><span>Bu işlem geri alınamaz — onayladığın an devreye girer.</span></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="legal-section">
+    <div class="container">
+      <h2>Uygulamaya erişemiyorsan</h2>
+      <p class="section-note">Şifreni unuttuysan, uygulamayı sildiysen veya başka bir sebeple giriş yapamıyorsan, e-posta ile de talepte bulunabilirsin.</p>
+      <div class="legal-card">
+        <p>Hesabına kayıtlı e-posta adresinden bize yaz, kimliğini doğruladıktan sonra hesabını senin adına sileriz.</p>
+        <a class="btn btn-primary btn-sm" href="mailto:puratagdestek@gmail.com?subject=Hesap%20silme%20talebi">puratagdestek@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="legal-section">
+    <div class="container">
+      <h2>Ne silinir, ne zaman?</h2>
+      <p class="section-note">Hesabını sildiğinde aşağıdaki veriler şu şekilde işlenir.</p>
+      <div class="delete-table-wrap">
+        <table class="delete-table">
+          <thead>
+            <tr><th>Veri</th><th>Durum</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hesap bilgileri<small>e-posta, kullanıcı adı, ad soyad, telefon, şifre</small></td>
+              <td><span class="status-pill now">Hemen silinir</span></td>
+            </tr>
+            <tr>
+              <td>Favoriler ve tarama geçmişi</td>
+              <td><span class="status-pill now">Hemen silinir</span></td>
+            </tr>
+            <tr>
+              <td>Diyet, alerjen tercihleri ve kalori profili/günlükleri</td>
+              <td><span class="status-pill now">Hemen silinir</span></td>
+            </tr>
+            <tr>
+              <td>Gönderdiğin geri bildirimler<small>mesajın kendisi ürünü iyileştirmek için kalabilir, hesabınla bağı koparılır</small></td>
+              <td><span class="status-pill later">Kimliğin kaldırılır</span></td>
+            </tr>
+            <tr>
+              <td>Otomatik veritabanı yedekleri</td>
+              <td><span class="status-pill later">Sınırlı süre sonra silinir</span></td>
+            </tr>
+            <tr>
+              <td>Sunucu erişim kayıtları (log)</td>
+              <td><span class="status-pill later">Sınırlı süre sonra silinir</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../index.html" class="brand"><img src="../assets/app_icon.png" alt="PuraTag logosu"><span>PuraTag</span></a>
+        <p>Ürünleri daha bilinçli seç. Barkod tara, içerikleri anla, kendi filtrelerinle uyumlu olanı bul.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Ürün</h5>
+          <a href="../index.html#nasil-calisir">Nasıl Çalışır</a>
+          <a href="../index.html#puan-sistemi">Puan Sistemi</a>
+          <a href="../index.html#filtreler">Filtreler</a>
+          <a href="../index.html#ozellikler">Özellikler</a>
+        </div>
+        <div class="footer-col">
+          <h5>Veri Kaynağı</h5>
+          <a href="https://world.openfoodfacts.org/" target="_blank" rel="noopener">Open Food Facts</a>
+        </div>
+        <div class="footer-col">
+          <h5>Bize Ulaşın</h5>
+          <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=puratagdestek@gmail.com" target="_blank" rel="noopener">puratagdestek@gmail.com</a>
+          <a href="https://www.instagram.com/puratag_app/?utm_source=qr&amp;r=nametag" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 PuraTag. Tüm hakları saklıdır.</span>
+      <span>Bu site yalnızca uygulamayı tanıtır — PuraTag mobil cihazlarda çalışır.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

@@ -585,3 +585,66 @@ footer { background: var(--dark-green); color: rgba(255,255,255,0.85); padding: 
   .cta-banner { padding: 48px 24px; }
   .cta-banner h2 { font-size: 24px; }
 }
+
+/* ===== İçerik sayfaları (Hesap Silme, Gizlilik vb.) ===== */
+.legal-hero { padding: 64px 0 8px; }
+.legal-hero .container { max-width: 760px; }
+.legal-hero h1 { font-size: 38px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 16px; }
+.legal-hero .lead { color: var(--text-secondary); font-size: 16.5px; line-height: 1.65; max-width: 58ch; }
+
+.legal-section { padding: 40px 0; }
+.legal-section .container { max-width: 760px; }
+.legal-section h2 { font-size: 22px; font-weight: 800; letter-spacing: -0.3px; margin-bottom: 6px; }
+.legal-section .section-note { color: var(--text-tertiary); font-size: 14px; margin-bottom: 20px; max-width: 58ch; }
+
+.delete-steps { list-style: none; counter-reset: step; display: flex; flex-direction: column; gap: 10px; }
+.delete-steps li {
+  counter-increment: step;
+  display: flex; align-items: flex-start; gap: 16px;
+  background: var(--card-bg);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-l);
+  padding: 18px 20px;
+}
+.delete-steps li::before {
+  content: counter(step);
+  flex-shrink: 0;
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  background: var(--mint);
+  color: var(--salvia);
+  font-weight: 800;
+  font-size: 13px;
+  display: flex; align-items: center; justify-content: center;
+}
+.delete-steps strong { display: block; font-size: 15px; font-weight: 700; margin-bottom: 2px; }
+.delete-steps span { font-size: 13.5px; color: var(--text-secondary); }
+
+.legal-card {
+  background: var(--card-bg);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-l);
+  padding: 22px 24px;
+}
+.legal-card p { font-size: 14.5px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 12px; }
+.legal-card p:last-child { margin-bottom: 0; }
+.legal-card .btn { margin-top: 6px; }
+
+.delete-table-wrap { overflow-x: auto; border: 1px solid var(--divider); border-radius: var(--radius-l); background: var(--card-bg); }
+.delete-table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+.delete-table th {
+  text-align: left; text-transform: uppercase; letter-spacing: 0.4px;
+  font-size: 11.5px; font-weight: 700; color: var(--text-tertiary);
+  background: var(--beige); padding: 12px 18px; border-bottom: 1px solid var(--divider);
+}
+.delete-table td { padding: 14px 18px; border-bottom: 1px solid var(--divider); vertical-align: top; color: var(--text-primary); }
+.delete-table tr:last-child td { border-bottom: none; }
+.delete-table td small { display: block; color: var(--text-tertiary); margin-top: 2px; }
+.status-pill { display: inline-block; font-size: 11.5px; font-weight: 700; padding: 4px 10px; border-radius: var(--radius-pill); white-space: nowrap; }
+.status-pill.now { background: var(--mint); color: var(--salvia); }
+.status-pill.later { background: rgba(228,137,0,0.12); color: var(--honey); }
+
+@media (max-width: 600px) {
+  .legal-hero h1 { font-size: 28px; }
+  .delete-steps li { padding: 14px 16px; }
+}
