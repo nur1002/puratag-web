@@ -644,6 +644,31 @@ footer { background: var(--dark-green); color: rgba(255,255,255,0.85); padding: 
 .status-pill.now { background: var(--mint); color: var(--salvia); }
 .status-pill.later { background: rgba(228,137,0,0.12); color: var(--honey); }
 
+.legal-meta { color: var(--text-tertiary); font-size: 13px; margin-bottom: 18px; }
+
+.legal-section p { color: var(--text-secondary); font-size: 15px; line-height: 1.7; margin-bottom: 14px; max-width: 62ch; }
+.legal-section ul { display: flex; flex-direction: column; gap: 10px; margin: 0 0 4px; }
+.legal-section ul li {
+  position: relative;
+  padding-left: 22px;
+  color: var(--text-secondary);
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+.legal-section ul li::before {
+  content: "";
+  position: absolute; left: 0; top: 8px;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--salvia);
+}
+.legal-section ul li strong { color: var(--text-primary); }
+.legal-toc { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 8px; }
+.legal-toc a {
+  font-size: 13px; font-weight: 600; color: var(--salvia);
+  background: var(--mint); padding: 7px 14px; border-radius: var(--radius-pill);
+}
+
 @media (max-width: 600px) {
   .legal-hero h1 { font-size: 28px; }
   .delete-steps li { padding: 14px 16px; }
